@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsArrowRightSquare } from "react-icons/bs";
+// import { BsArrowRightSquare } from "react-icons/bs";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md"
 import IMG1 from '../src/Assets/IMG1.jpg';
 // import { Link } from 'react-router-dom';
