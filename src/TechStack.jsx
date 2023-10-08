@@ -1,5 +1,5 @@
 import React from 'react'
-import IMG1 from "../src/Assets/IMG1.jpg"
+// import IMG1 from "../src/Assets/IMG1.jpg"
 import HTML5 from "../src/Assets/HTML5.png"
 import Js from "../src/Assets/Js.png"
 import CSS from "../src/Assets/CSS.png"

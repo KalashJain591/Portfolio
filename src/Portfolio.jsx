@@ -1,5 +1,5 @@
 import React from "react";
-import IMG2 from "../src/Assets/IMG2.png";
+// import IMG2 from "../src/Assets/IMG2.png";
 
 
 const Portfolio = () => {
