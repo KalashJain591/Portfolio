@@ -7,23 +7,44 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            src: "https://firebasestorage.googleapis.com/v0/b/blog-app-6ac9e.appspot.com/o/images%2FSavorimg2.png?alt=media&token=97e7010b-81f9-47fa-aeef-46bb00746303&_gl=1*karzcc*_ga*NzE3NDAxNDE0LjE2OTE4Mzk1NTc.*_ga_CW55HF8NVT*MTY5Njc3NDcwOC4xMC4xLjE2OTY3NzQ4NTQuMzguMC4w",
-            demo:"https://www.savornaturals.in/",
-            code :"https://github.com/KalashJain591/Savor.git"
+            name:"E-Commerce Website",
+            status :"Completed",
+            demo: "https://www.savornaturals.in/",
+            code: "https://github.com/KalashJain591/Savor.git",
+            about:"My Contribution in the Project is to work on Frontend and Login and Signup Functionality . The Tech-Stack used was MERN stack .",
+            flag:1
         },
         {
             id: 2,
-            src: "https://firebasestorage.googleapis.com/v0/b/blog-app-6ac9e.appspot.com/o/images%2Fmoonstone.png?alt=media&token=a08d587c-d868-4bd4-8882-8db31b9b107f&_gl=1*msg4p2*_ga*NzE3NDAxNDE0LjE2OTE4Mzk1NTc.*_ga_CW55HF8NVT*MTY5Njc3NDcwOC4xMC4xLjE2OTY3NzUyODYuMzUuMC4w",
-            demo:"https://moonstone.onrender.com/",
-            code:"https://github.com/KalashJain591/moonstone-fest.git"
+            name:'University Fest Website',
+            status :"Completed",
+            demo: "https://moonstone.onrender.com/",
+            code: "https://github.com/KalashJain591/moonstone-fest.git",
+            about:"My Contribution in the Project is to work on Frontend and Login and Signup Functionality . The Tech-Stack used was MERN stack .",
+            flag:1
+
         },
         {
             id: 3,
-            src: "https://firebasestorage.googleapis.com/v0/b/blog-app-6ac9e.appspot.com/o/images%2Fmovie%20application.png?alt=media&token=e81f3da8-e48e-4ca7-9c33-5f8aff25566f&_gl=1*q4wanu*_ga*NzE3NDAxNDE0LjE2OTE4Mzk1NTc.*_ga_CW55HF8NVT*MTY5Njc3NDcwOC4xMC4xLjE2OTY3NzU0MzIuNDUuMC4w",
-            demo:"https://all-movie-search.netlify.app/",
-            code:"https://all-movie-search.netlify.app/"
+            name : "Movie Search Application",
+            status :"Completed",
+            demo: "https://all-movie-search.netlify.app/",
+            code: "https://all-movie-search.netlify.app/",
+            about:"My Contribution in the Project is to work on Frontend and Login and Signup Functionality . The Tech-Stack used was MERN stack .",
+            flag:1
+
         },
-   
+        {
+            id: 4,
+            name : "Blog Application",
+            status :"In Progress",
+            demo: "https://all-movie-search.netlify.app/",
+            code: "https://all-movie-search.netlify.app/",
+            about:"My Contribution in the Project is to work on Frontend and Login and Signup Functionality . The Tech-Stack used was MERN stack .",
+            flag:1
+
+        },
+
     ];
 
     return (
@@ -39,25 +60,50 @@ const Portfolio = () => {
                     <p className="py-6">Check out some of my work right here</p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                    {portfolios.map(({ id, src,demo ,code}) => (
+                {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+                    {portfolios.map(({ id, src, demo, code }) => (
                         <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                             <img
                                 src={src}
                                 alt=""
                                 className="rounded-md duration-200 w-80 h-64 hover:scale-105"
-                                
+
                             />
                             <div className="flex items-center justify-center">
                                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                                  <a href={demo}>Demo</a>  
+                                    <a href={demo}>Demo</a>
                                 </button>
                                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                                <a href={code}>Code</a>
+                                    <a href={code}>Code</a>
                                 </button>
                             </div>
                         </div>
                     ))}
+                </div> */}
+
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+                    {portfolios.map(({ id, name, src, demo, code, flag, status, about }) => (
+                        <div className="shadow-md shadow-gray-600 rounded-lg">
+                            <h1 className="text-center p-2">{name} </h1>
+                            <h2 className="p-2">Status : {status}</h2>
+                            <div className="relative group ">
+                                <a><img width="30" height="30" src="https://img.icons8.com/dotty/80/FFFF00/about.png" alt="about" /></a>
+                                 <div className="border-dashed border-2 m-2 p-2 hidden group-hover:block duration-200  transition-all ">
+                                    <h1 className="text-center">About</h1>
+                                    <p>{about} </p>
+                                </div> 
+                            </div>
+                            <div className=" grid grid-cols-2 items-center p-2">
+
+                                {/* <h1>Github</h1> */}
+                                <div className="flex justify-center">
+                                    <a href={code} ><img width="40" height="40" src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png" alt="github" /></a></div>
+                                <div className="flex justify-center">
+                                    <a href={demo}><img width="30" height="30" src="https://img.icons8.com/pastel-glyph/64/FFFFFF/website--v2.png" alt="website--v2" /></a></div>
+                                {/* <h1>Website</h1> */}
+
+                            </div>
+                        </div>))}
                 </div>
             </div>
         </div>
