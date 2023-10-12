@@ -87,7 +87,7 @@ const Portfolio = () => {
                             <h1 className="text-center p-2">{name} </h1>
                             <h2 className="p-2">Status : {status}</h2>
                             <div className="relative group ">
-                                <a><img width="30" height="30" src="https://img.icons8.com/dotty/80/FFFF00/about.png" alt="about" /></a>
+                               <img width="30" height="30" src="https://img.icons8.com/dotty/80/FFFF00/about.png" alt="about" />
                                  <div className="border-dashed border-2 m-2 p-2 hidden group-hover:block duration-200  transition-all ">
                                     <h1 className="text-center">About</h1>
                                     <p>{about} </p>
